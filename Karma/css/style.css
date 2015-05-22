@@ -1,0 +1,265 @@
+html{
+	margin:0;
+}
+body{
+	/**background-color: LightGray;**/
+	margin:0;
+}
+
+/**div{
+	border: 1px solid Chocolate;
+}
+**/
+
+
+.header{
+	background-color: white;
+	height : 4.375em;
+	border : 1px solid;
+	/** The line below helps smoothen the fonts.**/ 
+	-webkit-font-smoothing: antialiased;
+	position: fixed;
+	width: 100%;
+	z-index:9999;
+}
+
+.logo{
+	width:26px;
+	height : 40px;
+	margin-top: 12px;
+	margin-bottom: auto;
+	float: left;
+	padding-left: 5px;
+}
+
+.container{
+	width : 47em;
+	margin-left: auto;
+	margin-right: auto;
+	height : 4.375em;
+}
+
+.links{
+	float: right;
+	padding-right: 15px;
+}
+
+.links > li{
+	font-family: 'Roboto', sans-serif;
+	display: inline-block;
+	margin-top: 9px;
+	padding-left : 18px;
+	padding-right: 9px;
+	color : rgb(131, 137, 148);
+	letter-spacing: 0.05;
+	font-size: 16px;
+	font-weight: 500px;
+}
+
+li.bolder{
+	color: rgb(73, 85, 91);
+	font-weight: 800px;
+}
+
+.landing{
+	width: 100%;
+	height: 40em;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-top: 15em;
+	background-image: url("../img/bg.jpeg");
+	background-position: center bottom;
+}
+
+
+.coffee{
+	width: 100%;
+	height: 42em;
+	background-color: white;
+	background-size: cover;
+	padding-top: 10em;
+
+}
+.title{
+	width:50em;
+	height: 15em;
+	margin-left: auto;
+	margin-right: auto;
+	color : white;
+	text-align: center;
+}
+
+.title > h2{
+	font-family: 'Roboto', sans-serif;
+	font-size: 50px;
+	text-align: center;
+	line-height: 50px;
+	font-weight: 100;
+	padding-bottom: 5px;
+}
+.title > h3{
+	font-family: 'Roboto', sans-serif;
+	font-size: 25px;
+	text-align: center;
+	line-height: 25px;
+	font-weight: 100;
+	padding-bottom: 15px;
+}
+
+.slogan{
+	width : 45em;
+	margin: 0 auto;
+}
+
+.images{
+	width: 45em;
+	padding-top: 10px;
+	margin:0 auto;
+}
+
+.taglines{
+	width: 45em;
+	margin:0 auto;
+	height: 8em;
+}
+
+#internet{
+	width: 15em;
+	margin-left: 0;
+	height:8em;
+	color: black;
+	text-align: center;
+	float: left;
+}
+
+#productivity{
+	width: 15em;
+	margin-left: 15em;
+	height:8em;
+	color: black;
+	text-align: center;
+}
+
+#pay{
+	width: 15em;
+	margin-left: 30em;
+	height:8em;
+	color: black;
+	text-align: center;
+	float:right;
+	margin-top: -130px;
+}
+
+#internet > h3{
+	font-family: 'Roboto', sans-serif;
+	font-size: 27px;
+	text-align: center;
+	line-height: 27px;
+	font-weight: 100;
+	color: black;
+}
+
+#productivity > h3{
+	font-family: 'Roboto', sans-serif;
+	font-size: 27px;
+	text-align: center;
+	line-height: 27px;
+	font-weight: 100;
+	color: black;
+}
+
+#pay > h3{
+	font-family: 'Roboto', sans-serif;
+	font-size: 27px;
+	text-align: center;
+	line-height: 27px;
+	font-weight: 100;
+	color: black;
+}
+
+.slogan > h2{
+	font-family: 'Roboto', sans-serif;
+	font-size: 40px;
+	text-align: center;
+	line-height: 50px;
+	font-weight: 100;
+	color: black;
+}
+
+#computer{
+	padding-right: 7em;
+	padding-left: 4em;
+}
+
+#gas{
+	padding-left: 7em;
+}
+
+button{
+	background-color: #f15a29;
+	border-color: #f15a29;
+	width: 9.688rem;
+	padding: 1em;
+	border-radius: 4px;
+	color:white;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.125rem;
+	border-style:none;
+	text-shadow:none;
+	outline:none;
+	letter-spacing: 0.05;
+	font-weight: 100;
+}
+
+button:hover{
+	background-color: rgb(221, 106, 24);
+}
+
+.footer{
+	height: 10em;
+	width: 50em;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 4em;
+	border: 1px solid;
+	border-top-color: #afafaf;
+	border-bottom-color: #ffffff;
+	border-right-color: #ffffff;
+	border-left-color: #ffffff;
+}
+
+
+.footer > p{
+	color: black;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	line-height: 16px;
+	padding: 3px;
+}
+
+.social{
+	width: 20em;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 60px;
+}
+
+.social > ul{
+	width: 15em;
+	margin-left: auto;
+	margin-right: auto; 
+}
+
+li{
+	display: inline-block;
+	padding-left: 25px;
+}
+
+.msg{
+	margin-top: 15px;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	color : #afafaf;
+	font-size: 10px;
+}

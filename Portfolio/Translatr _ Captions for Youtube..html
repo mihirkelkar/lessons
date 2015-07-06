@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!-- saved from url=(0026)http://localhost:8000/#how -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <title>
+    Translatr : Captions for Youtube.
+  </title>
+  <link rel="stylesheet" type="text/css" href="./Translatr _ Captions for Youtube._files/bootstrap.min.css">
+  <script type="text/javascript" id="www-widgetapi-script" src="./Translatr _ Captions for Youtube._files/www-widgetapi.js" async=""></script><script src="./Translatr _ Captions for Youtube._files/player_api"></script><script src="./Translatr _ Captions for Youtube._files/bootstrap.min.js"></script><style type="text/css"></style>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link href="./Translatr _ Captions for Youtube._files/css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="./Translatr _ Captions for Youtube._files/style.css">
+</head>
+<body>
+<script>
+  var tag = document.createElement('script');
+  tag.src = "//www.youtube.com/player_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+  var player;
+  var counter = 0;
+function onYouTubePlayerAPIReady() {
+  // create the global player from the specific iframe (#video)
+  player = new YT.Player('video', {
+    events: {
+      // call this function when player is ready to use
+      'onReady': onPlayerReady
+    }
+  });
+};
+
+function onPlayerReady(event) {
+  
+  // bind events
+  var playButton = document.getElementById("play-button");
+  playButton.addEventListener("keyup", function(e) {
+    if(e.keyCode == 32){
+      counter = counter + 1;
+      if(counter == 2){
+        player.playVideo();
+        counter = 0;
+       } 
+    }
+  });
+  
+  var pauseButton = document.getElementById("play-button");
+  pauseButton.addEventListener("keydown", function(e) {
+      player.pauseVideo(10000);
+  });
+  
+}
+</script>
+  <section class="header">
+    <div class="na">
+       <i class="fa fa-globe fa-2x"></i>
+      <div class="links">
+        <h3>Translatr : Crowd Sourcing Youtube captions</h3>
+      </div>
+    </div>
+  </section>
+  <br>
+  <section class="content">
+    <div class="row">
+      <div class="col-xs-12 col-md-6">
+        <iframe class="vid" width="550" height="380" src="./Translatr _ Captions for Youtube._files/JPyuH4qXLZ0.html" frameborder="0" allowfullscreen="" id="video">
+        </iframe>
+    </div>
+      <div class="col-xs-12 col-md-6 rightstuff">
+        <textarea id="play-button" style="width:100%; margin-left :-0.5em; padding:0.2em; margin-bottom:1em;" class="form-control" rows="7"></textarea>
+        <div class="bannerarea">     
+        </div>
+        <button></button>
+      </div>
+    </div>
+  </section>
+
+
+</body></html>

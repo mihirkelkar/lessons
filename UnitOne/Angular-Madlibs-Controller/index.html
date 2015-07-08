@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html ng-app="MyApp">
+<head>
+	<title> Angular Madlibs</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"></script>
+	<script  src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Karla' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="js/app.js"></script>
+</head>
+<body ng-controller="MadCtrl">
+	<header>
+
+	</header>
+
+	<div id="banner" class="row">
+	  <div class="col-md-3">
+	  	<img src="img/smiley.png">
+	  </div>
+	  <div class="col-md-6">
+	  	<img src="img/madlibs.png">
+	  	<h1>Automate This !</h1>
+	  </div>
+	</div>
+	<section class="forms">
+		
+		<form class="form-inline group">
+		  <div class="form-group textstuff">
+		    <input type="text" class="form-control" ng-model="male" placeholder=" Name">
+		  </div>
+		  
+
+		  <div class="checkbox textstuff">
+			   <input type="checkbox" ng-model="confirmed" ng-change="change()"> Female ? 
+		  </div>
+
+
+		  
+		  <div class="form-group textstuff">
+		    <input type="text" class="form-control" ng-model="dirty" placeholder="Dirty Task">
+		  </div>
+		  <div class="form-group textstuff">
+		    <input type="text" class="form-control" ng-model="obx" placeholder="Obnoxious Celebrity">
+		  </div>
+		</form>  
+		<form class="form-inline group">
+		  <div class="form-group textstuff">
+		    <input type="text" class="form-control" ng-model="job" placeholder="Job Title">
+		  </div>
+		  <div class="form-group textstuff">
+		    <input type="text" class="form-control" ng-model="celeb" placeholder="Celebrity">
+		  </div>
+		  <div class="form-group textstuff">
+		    <input type="text" class="form-control" ng-model="num" placeholder="Huge Number">
+		  </div>
+		</form>
+		<form class="form-inline group">
+		  <div class="form-group textstuff">
+		    <input type="text" class="form-control" ng-model="tedious" placeholder="Tedious Title">
+		  </div>
+		  <div class="form-group textstuff">
+		    <input type="text" class="form-control" ng-model="skill" placeholder="Useless Skill">
+		  </div>
+		  <div class="form-group textstuff">
+		    <input type="text" class="form-control" ng-model="adj" placeholder="Adjective">
+		  </div>
+		</form>
+	</section>
+	<section class="text">
+		<p><span>{{male || " Name"}}</span> was a <span>{{job || "Job Title"}}</span> who loved technology. Although {{pro}}he loved parts of {{gender || "his"}} job, {{pro}}he absolutely hated <span>{{tedious || "Tedious task"}}</span> and <span>{{dirty || 'Dirty Task'}}</span> . So  <span>{{male || "Name"}}</span> met {{gender || "his"}} life mentor <span>{{celeb || "Celebrity"}}</span> who told {{gender || "him"}} to learn how to <span>{{skill || 'Useless Skill'}}</span> with Thinkful. Thinkful did not offer a course on <span>{{skill || 'Useless Skill'}}</span>. So {{pro}}he studied programming instead</p>
+
+		<p>
+			What a great decision ! With {{gender || "his"}} new skills <span>{{male || " Name"}}</span> built a(n) <span>{{adj || "Adjective"}}</span> robot named <span>{{obx || "Obnoxious Celebrity"}} </span>that not only loved <span>{{dirty || 'Dirty Task'}}</span> but did it <span>{{num || 'Huge number'}}</span> faster.
+		</p>
+	</section>
+</body>
+</html>

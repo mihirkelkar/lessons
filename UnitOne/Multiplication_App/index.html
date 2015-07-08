@@ -1,0 +1,23 @@
+<html ng-app="MyApp">
+	<head>
+		<title>
+			Multiplication Table
+		</title>
+		<script type="text/javascript"></script>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js" type="text/javascript"></script>
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<script type="text/javascript" src = "js/app.js"></script>
+	</head>
+	<body ng-controller="MultCtrl">
+		<h2 class = "title">Multiplication Tables</h2>
+		<div class="form-group forms">
+		   <input type="number" class="form-control" ng-model="numberlimit" placeholder="Enter the Number">
+		 </div>
+		 <table ng-repeat="a in numbers()">
+		 <tr>
+  			<td ng-repeat="b in numbers()">{{compute(a,b)}}</td>
+  		 </tr>	
+  		 </table>
+	</body>
+</html>

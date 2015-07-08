@@ -1,0 +1,28 @@
+.forms{
+	width: 20em;
+	margin: 0 auto;
+}
+
+.title{
+	text-align: center;
+}
+
+.cell{
+	width: 10px;
+	height: 10px;
+	border: 1px solid #efefef;
+	
+}
+
+td {
+  border:1px solid #ddd;
+  width:90px;
+  height:90px;
+  text-align:center;
+  vertical-align:middle;
+}
+
+table{
+	width: 80%;
+	margin: 0 auto;
+}

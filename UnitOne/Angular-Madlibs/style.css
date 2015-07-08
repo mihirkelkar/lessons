@@ -1,0 +1,48 @@
+body{
+	width: 100%;
+	height: 100%;
+	margin: 0 0;
+}
+
+header{
+	width: 100%;
+	height: 4em;
+	margin: 0 auto;
+	background-color: #efefef;
+}
+
+#banner{
+	text-align: center;
+	font-family: 'Karla', sans-serif;
+}
+
+.forms{
+	width: 80%;
+	margin: 4em auto;
+}
+
+
+.group{
+	text-align: center;
+}
+
+.textstuff{
+	padding: 1em;
+}
+
+span{
+	height: 5em;
+	background-color: #efefef;
+	border-radius: 5px;
+
+}
+
+.text{
+	letter-spacing: 0.05em;
+	font-size: 20px;
+	width: 50em;
+	margin: 0 auto;
+	text-align: justify;
+	font-family: 'Karla', sans-serif;
+	line-height: 2.5em;
+}

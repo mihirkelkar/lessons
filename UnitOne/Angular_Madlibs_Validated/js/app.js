@@ -1,6 +1,6 @@
 angular.module('MyApp', [])
 	.controller('MadCtrl', function($scope){
-		$scope.gender = ""
+		$scope.gender = "";
 		$scope.showresult = false;
 		$scope.submitted = false;
 		$scope.change = function(){

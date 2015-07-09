@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html ng-app="MyApp">
+<head>
+	<title> Angular Madlibs</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"></script>
+	<script  src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Karla' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="js/app.js"></script>
+</head>
+<body ng-controller="MadCtrl">
+	<header>
+
+	</header>
+
+	<div id="banner" class="row">
+	  <div class="col-md-3">
+	  	<img src="img/smiley.png">
+	  </div>
+	  <div class="col-md-6">
+	  	<img src="img/madlibs.png">
+	  	<h1>Automate This !</h1>
+	  </div>
+	</div>
+	<section class="forms" ng-hide="showresult" ng-submit="submit()" >	
+		<form class="form-inline group" name="myForm">
+		  <div class="form-group textstuff">
+		    <input type="text" class="form-control" name="name" ng-model="male" placeholder=" Name" required/>
+		  </div>	  
+		  <div class="form-group textstuff">
+		    <input type="text" class="form-control" name="dirty" ng-model="dirty" placeholder="Dirty Task" required/>
+		  </div>
+		  <div class="form-group textstuff">
+		    <input type="text" class="form-control" name="obx" ng-model="obx" placeholder="Obnoxious Celebrity" required/>
+		  </div>
+		</form>  
+		<form class="form-inline group" name="myFormTwo">
+		  <div class="form-group textstuff">
+		    <input type="text" class="form-control" name="job" ng-model="job" placeholder="Job Title" required/>
+		  </div>
+		  <div class="form-group textstuff">
+		    <input type="text" class="form-control" name="celeb" ng-model="celeb" placeholder="Celebrity" required/>
+		  </div>
+		  <div class="form-group textstuff">
+		    <input type="number" class="form-control" name="num" ng-model="num" placeholder="Huge Number" required/>
+		  </div>
+		</form>
+		<form class="form-inline group" name="myFormThree">
+		  <div class="form-group textstuff">
+		    <input type="text" class="form-control" name="tedious" ng-model="tedious" placeholder="Tedious Title" required/>
+		  </div>
+		  <div class="form-group textstuff">
+		    <input type="text" class="form-control" name="skill" ng-model="skill" placeholder="Useless Skill" required/>
+		  </div>
+		  <div class="form-group textstuff">
+		    <input type="text" class="form-control" name="adj" ng-model="adj" placeholder="Adjective" required/>
+		  </div>
+		</form>
+		<form class="form-inline group">
+		   <div class="checkbox check">
+			   <input type="checkbox" ng-model="confirmed" ng-change="change()"> Female ? 
+		   </div>
+		   <div class="form-group textstuff">
+		   		<button type="button submit" class="btn btn-primary buttonright">Generate Madlib</button>
+		   </div>
+		</form>	
+	</section>
+
+	<p class="bg-danger dangers" ng-if="submitted && myForm.name.$error.required"> Name is required</p>
+	<p class="bg-danger dangers" ng-if="submitted && myForm.dirty.$error.required"> A Dirty Task is required</p>
+	<p class="bg-danger dangers" ng-if="submitted && myForm.obx.$error.required"> An Obnoxious Celebrity is required</p>
+	<p class="bg-danger dangers" ng-if="submitted && myFormTwo.job.$error.required"> A job is required</p>
+	<p class="bg-danger dangers" ng-if="submitted && myFormTwo.celeb.$error.required"> A celebrity is required</p>
+	<p class="bg-danger dangers" ng-if="submitted && myFormTwo.num.$error.required"> A Number is required</p>
+
+	<p class="bg-danger dangers" ng-if="submitted && myFormTwo.num.$error.number"> Input has to be a number</p>
+	<p class="bg-danger dangers" ng-if="submitted && myFormThree.tedious.$error.required"> A Tedious Task is required</p>
+	<p class="bg-danger dangers" ng-if="submitted && myFormThree.skill.$error.required"> A Skill is required</p>
+	<p class="bg-danger dangers" ng-if="submitted && myFormThree.adj.$error.required"> An Adjective is required</p>
+
+
+	<section class="text" ng-hide="!showresult">
+		<p><span>{{male || " Name"}}</span> was a <span>{{job || "Job Title"}}</span> who loved technology. Although {{pro}}he loved parts of {{gender || "his"}} job, {{pro}}he absolutely hated <span>{{tedious || "Tedious task"}}</span> and <span>{{dirty || 'Dirty Task'}}</span> . So  <span>{{male || "Name"}}</span> met {{gender || "his"}} life mentor <span>{{celeb || "Celebrity"}}</span> who told {{gender || "him"}} to learn how to <span>{{skill || 'Useless Skill'}}</span> with Thinkful. Thinkful did not offer a course on <span>{{skill || 'Useless Skill'}}</span>. So {{pro}}he studied programming instead</p>
+
+		<p>
+			What a great decision ! With {{gender || "his"}} new skills <span>{{male || " Name"}}</span> built a(n) <span>{{adj || "Adjective"}}</span> robot named <span>{{obx || "Obnoxious Celebrity"}} </span>that not only loved <span>{{dirty || 'Dirty Task'}}</span> but did it <span>{{num || 'Huge number'}} </span> times faster.
+		</p>
+		<div class="form-group textstuff">
+		   		<button type="button" ng-click="reset()" class="btn btn-primary buttonright">Start Over</button>
+		   </div>
+	</section>
+</body>
+</html>

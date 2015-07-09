@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<title>Angular Forms and Error Messages</title>
+	</head>
+	<body>
+		<!-- This is how you describe that the field in the form is required-->
+			<form name="myForm">
+				<!-- The use of attribtue required invokes the standard HTML5 error response.  -->
+				<input type="text" required>
+			</form>
+			<!-- With Angular you might want to customize that error message as well -->
+			<form name="myFormtwo">
+				<input type="text" name="texty" ng-model="data.text" required>
+			</form>
+			<!-- This would be our custom error message-->
+			<span class="error" ng-if="myFormtwo.$submitted && myFormtwo.texty.$error.required"> This is required</span>
+
+
+
+			<!-- Another way of doing this is sing ng-messages -->
+	</body>
+</html>

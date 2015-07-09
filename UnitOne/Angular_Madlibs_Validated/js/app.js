@@ -24,6 +24,7 @@ angular.module('MyApp', [])
 			$scope.showresult = false;
 			$scope.submitted = false;
 			$scope.gender = "";
+			$scope.pro = "";
 			$scope.male = '';
 			$scope.job = '';
 			$scope.celeb = '';
@@ -33,6 +34,7 @@ angular.module('MyApp', [])
 			$scope.skill = '';
 			$scope.adj = '';
 			$scope.num = '';
+			$scope.confirmed = false;
 
 		};
 });

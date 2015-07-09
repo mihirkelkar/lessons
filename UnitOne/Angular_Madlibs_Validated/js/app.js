@@ -4,10 +4,12 @@ angular.module('MyApp', [])
 		$scope.showresult = false;
 		$scope.submitted = false;
 		$scope.change = function(){
-			if ($scope.gender == "") {
+			if($scope.confirmed){
 				$scope.gender = "her";
 				$scope.pro = "s";
-			} else {
+			}
+			else
+			{
 				$scope.gender = "";
 				$scope.pro = "";
 			}

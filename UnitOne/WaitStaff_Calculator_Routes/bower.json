@@ -1,0 +1,16 @@
+{
+  "name": "WaitStaff_Calculator_Routes",
+  "version": "0.0.0",
+  "homepage": "https://github.com/mihirkelkar/lessons",
+  "authors": [
+    "mihirkelkar <kelkarmhr@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

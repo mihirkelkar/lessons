@@ -1,0 +1,44 @@
+.row{
+  background-color: transparent;
+}
+
+.title{
+  text-align: center;
+  font-family: 'Merriweather Sans', sans-serif;
+  opacity: 0.5;
+  line-height: 15px;
+  padding: 0.5em;
+}
+
+.nav{
+  width: 15em;
+  margin: 0 auto;
+}
+
+.meal{
+  margin: 2em auto;
+  width: 30em;
+  border: 1px dotted #efefef;
+  border-radius: 3%;
+}
+
+
+.cust{
+  text-align: center;
+  margin: 1em auto;
+  width: 30em;
+  border: 1px dotted #efefef;
+  border-radius: 3%;
+}
+}
+.meal > header{
+	height: 4em;
+	background-color: #efefef;
+	text-align: center;
+	vertical-align: middle;
+	font-family: 'Merriweather Sans', sans-serif;
+	border : 1px solid;
+	border-top-color: #ffffff;
+	border-left-color: #ffffff;
+	border-right-color: #ffffff;
+}

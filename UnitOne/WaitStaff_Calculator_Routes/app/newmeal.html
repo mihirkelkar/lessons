@@ -1,0 +1,51 @@
+<div class="row">
+  <div class="col-md-12 cell">
+    <section class="meal">
+      <header>
+        <h3>Enter the Meal Details</h3>
+      </header>
+      <form name="tipform" ng-submit="submit()">
+        <div class="form-group formcells">
+          <div class="input-group">
+            <div class="input-group-addon">Base Meal Price</div>
+            <input type="number" ng-model="basetotal" class="form-control" id="basemeal" placeholder="Amount" required/>
+            <div class="input-group-addon">.00</div>
+          </div>
+      </div>
+
+      <div class="form-group formcells">
+          <div class="input-group">
+            <div class="input-group-addon">Tax Rate   </div>
+            <input type="number" ng-model="tax" class="form-control" id="tax" placeholder="Percentage" required/>
+            <div class="input-group-addon">%</div>
+          </div>
+      </div>
+
+      <div class="form-group formcells">
+          <div class="input-group">
+            <div class="input-group-addon">Tip Percentage</div>
+            <input type="number" ng-model="tipper" class="form-control" id="tip" placeholder="Percentage" required/>
+            <div class="input-group-addon">%</div>
+          </div>
+      </div>
+      <div class="buttons">
+        <button type="button submit" class="btn btn-primary">Submit</button>
+        <button type="button" ng-click="cancel()" class="btn btn-default">Cancel</button>
+      </div>
+    </form>
+    </section>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12 cell">
+    <section class="cust">
+      <header>
+        <h3>Customer Charges</h3>
+      </header>
+      <p>Subtotal : {{subtotal | number}}</p>
+      <p>Tip : {{tip | number}}</p>
+      <hr>
+      <p>Total : {{total | number}}</p>
+    </section>
+  </div>
+</div>    

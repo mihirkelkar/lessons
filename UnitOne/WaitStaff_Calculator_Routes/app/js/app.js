@@ -8,9 +8,9 @@ angular.module("MyApp", ["ngRoute"])
       controller: 'TipCtrl'
     }).when('/earn', {
       templateUrl : 'earning.html',
-      controller : 'TipCtrl'
+      controller : 'ResetCtrl'
     }).otherwise('/home');
   }])
   .controller('TipCtrl', function($scope){
-    $scope.city = "New York City";
+    
   })

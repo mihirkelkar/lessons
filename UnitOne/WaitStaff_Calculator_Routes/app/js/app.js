@@ -9,7 +9,7 @@ angular.module("MyApp", ["ngRoute"])
     }).when('/earn', {
       templateUrl : 'earning.html',
       controller : 'ResetCtrl'
-    }).otherwise('/home');
+    }).otherwise('/');
   }])
   .service('tipService', function(){
     var tipdata = {

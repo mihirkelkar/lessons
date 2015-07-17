@@ -1,15 +1,15 @@
 angular.module("MyApp", ["ngRoute"])
   .config(['$routeProvider', function($routeProvider){
     $routeProvider.when('/', {
-      templateUrl : 'home.html',
+      templateUrl : 'https://mihirkelkar.github.io/lessons/UnitOne/WaitStaff_Calculator_Routes/app/home.html',
       controller : 'TipCtrl'
     }).when('/new', {
-      templateUrl: 'newmeal.html',
+      templateUrl: 'https://mihirkelkar.github.io/lessons/UnitOne/WaitStaff_Calculator_Routes/app/newmeal.html',
       controller: 'TipCtrl'
     }).when('/earn', {
-      templateUrl : 'earning.html',
+      templateUrl : 'https://mihirkelkar.github.io/lessons/UnitOne/WaitStaff_Calculator_Routes/app/earning.html',
       controller : 'ResetCtrl'
-    }).otherwise('/home');
+    }).otherwise('/');
   }])
   .service('tipService', function(){
     var tipdata = {

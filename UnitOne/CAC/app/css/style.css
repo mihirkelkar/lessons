@@ -1,0 +1,111 @@
+body{
+  height: 100%;
+  width: 100%;
+  margin : 0 0;
+
+}
+
+.back{
+  background-image: url(../images/earth-space.jpg);
+  backgrond-size: cover;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  height: 100%;
+  width: 100%;
+  margin: -1.5em 0;
+}
+
+.title{
+  font-size: 3em;
+  margin : 0.5em auto;
+  text-align: center;
+  font-family: 'Poiret One', cursive;
+  opacity: 0.4;
+}
+
+.line{
+  opacity: 0.4;
+}
+
+.desc{
+  text-align: center;
+  font-family: 'Poiret One', cursive;
+  color: #ffffff;
+}
+
+.but{
+  padding-top: 1em;
+  font-size: 1em;
+  display: block;
+  text-align:center;
+  width: 12em;
+  height: 2.5em;
+  border-style:none;
+	text-shadow:none;
+	outline:none;
+  border: 1px solid white;
+  border-radius : 1em;
+  background: transparent;
+  margin: 0.5em auto;
+  font-family: 'Poiret One', cursive;
+  color: white;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+.newstyle{
+  width: 50em;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.container{
+  width: 50em;
+  height: 60em;
+  margin: 3em auto;
+  overflow: scroll;
+}
+
+.text{
+  opacity: 0.5;
+  font-family: 'Poiret One', cursive;
+  font-size : 2em;
+  text-align:center;
+}
+
+.ctrytitle{
+  opacity: 0.5;
+  font-family: 'Poiret One', cursive;
+  font-size : 6em;
+  text-align:center;
+}
+
+.flag{
+  width: 30em;
+  margin: 0 auto;
+}
+
+.map{
+  width: 15em;
+  margin: 0 auto;
+}
+
+.row{
+  text-align: center;
+  padding : 2em 0;
+  font-family: 'Poiret One', cursive;
+  font-size : 1.2em;
+}
+
+.heading{
+  font-size: 1.6em;
+  opacity: 0.5;
+}

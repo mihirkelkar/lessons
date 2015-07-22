@@ -1,0 +1,35 @@
+<h2 class="ctrytitle">{{information.countryName}}</h2>
+<hr>
+<div class="row">
+  <div class="col-md-6">
+    <center><img class="flag" ng-src="http://www.geonames.org/flags/x/{{information.countryCode | lowercase}}.gif"></center>
+  </div>
+  <div class="col-md-6">
+    <center>
+      <img class="map" ng-src="http://www.geonames.org/img/country/250/{{information.countryCode}}.png">
+    </center>
+  </div>
+</div>
+<hr>
+<div class="row">
+  <div class="col-md-6 heading">Population</div>
+  <div class="col-md-6">{{information.population }}</div>
+</div>
+<div class="row">
+  <div class="col-md-6 heading">Total Area (Sq KM)</div>
+  <div class="col-md-6">{{information.areaInSqKm}}</div>
+</div>
+<div class="row">
+  <div class="col-md-6 heading">Capital</div>
+  <div class="col-md-6">{{information.capital}}</div>
+</div>
+<div class="row">
+  <div class="col-md-6 heading">{{nbrs.length}} Neighbors</div>
+  <div class="col-md-6">
+      <p ng-repeat="nbr in nbrs"><a href="#/countries/{{nbr.countryCode}}/capital">{{nbr.countryName}}</a></p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12"><a class="btn btn-primary" href="#/" role="button">Home</a>
+  <a class="btn btn-info" href="#/countries" role="button">Countries</a></div>
+</div>
